@@ -1,0 +1,28 @@
+.container__grid{
+    display: grid;
+}
+.container__flex{
+    display: flex;
+}
+
+/* Style header */
+.container__cabecalho{
+    height: 50vh;
+    grid-template-areas:    
+    "logo logo botao";
+    text-align: center;
+}
+.cabecalho__logo{
+    grid-area: logo;
+    width: 100%;
+}
+.cabecalho__logo img{
+    width: 50%;
+}
+.cabecalho__menu{
+    grid-area: botao;    
+}
+.cabecalho__botoes{
+    flex-direction: column;
+}
+/****************/
