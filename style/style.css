@@ -1,28 +1,16 @@
+@import url(header.css);
+
+:root{
+    --branco:#ffffff;
+    --cor-da-capa:#BF4F36;
+    --cor-da-capa-mais-claro:#F29966;
+    --cor-de-pasta-claro:#F2D8C9;
+    --cor-de-pasta-escuro:#F2CA99;
+    --marrom-logo:#a68776;
+}
 .container__grid{
     display: grid;
 }
 .container__flex{
     display: flex;
 }
-
-/* Style header */
-.container__cabecalho{
-    height: 50vh;
-    grid-template-areas:    
-    "logo logo botao";
-    text-align: center;
-}
-.cabecalho__logo{
-    grid-area: logo;
-    width: 100%;
-}
-.cabecalho__logo img{
-    width: 50%;
-}
-.cabecalho__menu{
-    grid-area: botao;    
-}
-.cabecalho__botoes{
-    flex-direction: column;
-}
-/****************/

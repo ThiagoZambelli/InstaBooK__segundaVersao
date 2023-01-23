@@ -1,0 +1,52 @@
+.container__cabecalho{
+    height: 50vh;
+    grid-template-areas:    
+    "logo logo botao";
+    text-align: center;
+    background: linear-gradient(97.54deg, #F2CA99 35.49%, #F2D8C9 165.37%);
+}
+.cabecalho__logo{
+    grid-area: logo;
+    width: 80%;    
+    text-align: start;
+}
+.cabecalho__logo img{
+    width: 50%;
+    padding: 0 2rem;
+    cursor: pointer;
+}
+.cabecalho__logo img:hover{
+    transform: scale(1.04);
+}
+.cabecalho__menu{
+    grid-area: botao;
+    align-self: center;
+}
+.cabecalho__botoes{
+    flex-direction: column;
+    row-gap: 1rem;
+}
+.cabecalho__botao button{
+    background-color: transparent;
+    border: none;
+    width: 200px;
+    height: 40px;
+    cursor: pointer;
+    color: var(--marrom-logo); 
+    font-size: 1rem; 
+    font-weight: bold;
+    border-left: 1px dotted var(--marrom-logo);
+}
+.cabecalho__botao button:hover{
+    transform: scale(1.05);
+    color: var(--cor-da-capa);
+}
+.cabecalho-sair{
+    background-image: url(../img/sair.png);
+}
+.cabecalho-configuracao{
+    background-image: url(../img/configuracao.png);
+}
+.cabecalho-quemsomos{
+    background-image: url(../img/quemsomos.png);
+}
