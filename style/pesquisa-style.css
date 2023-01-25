@@ -1,0 +1,36 @@
+.pesquisa{    
+    display: flex;
+    width: 30vw;   
+    padding: 2em 1em;  
+    column-gap: 2em;  
+}
+.pesquisa label{
+    width: 24px;
+    height: 24px;
+}
+.pesquisa__botao{
+    width: 24px;
+    height: 24px;
+    background-image: url(/img/lupa.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    display: inline-block;    
+}
+.container__cheackbox{
+    display: none;
+}
+.container__cheackbox:checked~.pesquisa__container{
+    display: none;
+}
+.pesquisa__container{
+    display: flex;    
+}
+.pesquisa__input{
+    height: 24px;
+    width: 20vw;
+    border-radius: 24px;
+    text-align: center;
+}
+.pesquisa__input::placeholder{
+    text-align: center;
+}
