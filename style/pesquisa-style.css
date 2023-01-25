@@ -1,7 +1,7 @@
 .pesquisa{    
     display: flex;
-    width: 30vw;   
-    padding: 2em 1em;  
+    width: 10vw;   
+    padding: .5em 1em;  
     column-gap: 2em;  
 }
 .pesquisa label{
@@ -11,7 +11,7 @@
 .pesquisa__botao{
     width: 24px;
     height: 24px;
-    background-image: url(/img/lupa.png);
+    background-image: url(../img/lupa.png);
     background-repeat: no-repeat;
     background-position: center;
     display: inline-block;    
@@ -20,17 +20,23 @@
     display: none;
 }
 .container__cheackbox:checked~.pesquisa__container{
-    display: none;
+    display: none;    
 }
 .pesquisa__container{
-    display: flex;    
+    display: flex;
+    height: 15vh;
+    align-items: center;     
 }
 .pesquisa__input{
     height: 24px;
-    width: 20vw;
-    border-radius: 24px;
+    width: 30vw;
+    border: 3px solid var(--capa-do-livro);
+    border-radius: 10px;
     text-align: center;
+    background-color: var(--pasta-suspensa);
+    color: var(--marron-rodape);
 }
 .pesquisa__input::placeholder{
     text-align: center;
+    color: var(--marron-rodape);
 }

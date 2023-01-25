@@ -1,13 +1,21 @@
 @import url(header.css);
 @import url(pesquisa-style.css);
+@import url(footer.css);
+@import url(abas.css);
 
 :root{
-    --branco:#ffffff;
-    --cor-da-capa:#BF4F36;
-    --cor-da-capa-mais-claro:#F29966;
-    --cor-de-pasta-claro:#F2D8C9;
-    --cor-de-pasta-escuro:#F2CA99;
-    --marrom-logo:#a68776;
+    --branco:#ffffff;    
+    --preto: #000000;
+    --cinza:#d0d9d6;
+    --capa-do-livro:#402401;
+    --marrom-mais-claro:#735634;
+    --pasta-suspensa:#d9c091;
+    --beje-de-fundo:#bfa27e;
+    --marron-rodape: #260b01;
+}
+body{
+    font-size: 16px;
+    background-color: var(--cinza);
 }
 .container__grid{
     display: grid;
@@ -15,3 +23,4 @@
 .container__flex{
     display: flex;
 }
+

@@ -3,15 +3,21 @@
     grid-template-areas:    
     "logo logo botao";
     text-align: center;
-    background: linear-gradient(97.54deg, #F2CA99 35.49%, #F2D8C9 165.37%);
+    background: linear-gradient(130deg, var(--cinza) 15%, var(--marrom-mais-claro) 35.37%);    
 }
 .cabecalho__logo{
     grid-area: logo;
     width: 80%;    
-    text-align: start;
+    text-align: center;    
+    justify-content: center;
+}
+.cabecalho__logo a{
+    display: inline-block;
+    height: 100%;
+    width: 100%;
 }
 .cabecalho__logo img{
-    width: 50%;
+    width: 70%;
     padding: 0 2rem;
     cursor: pointer;
 }
@@ -32,14 +38,17 @@
     width: 200px;
     height: 40px;
     cursor: pointer;
-    color: var(--marrom-logo); 
+    color: var(--marron-rodape); 
     font-size: 1rem; 
     font-weight: bold;
-    border-left: 1px dotted var(--marrom-logo);
+    border-left: 1px dotted var(--marron-rodape);
+    box-shadow: -1px 1px 9px black;
+    background-color: var(--capa-do-livro);
 }
 .cabecalho__botao button:hover{
     transform: scale(1.05);
-    color: var(--cor-da-capa);
+    color: var(--capa-do-livro);
+    text-decoration: underline;
 }
 .cabecalho-sair{
     background-image: url(../img/sair.png);
