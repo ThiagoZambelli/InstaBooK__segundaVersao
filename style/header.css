@@ -3,8 +3,7 @@
     align-items: center;
     padding: 1em 0;
     row-gap: 1em;
-    background: linear-gradient(326deg, rgba(64,36,1,1) 28%, rgba(115,86,52,1) 100%);
-    border: .5em groove #CC7204;
+    background: linear-gradient(326deg, var(--marrom-mais-claro) 28%, var(--pasta-suspensa) 100%);
 }
 .cabecalho__logo{
     width: 90%;
@@ -16,31 +15,25 @@
     width: 100%;
 }
 .cabecalho__botoes{
-    column-gap: .2em;
+    column-gap: .5em;
 }
 .cabecalho__botao{        
     text-align: center; 
 }
 .cabecalho__botao button{
     width: 120px;
-    height: 22px;
-    background-color: var(--marron-rodape);
+    height: 22px;    
     border: none;    
-    background-size: 100%;
     font-size: 10px;
-    text-align: start;
+    text-align: center;
     text-transform: uppercase;
     font-weight: bold;
-    color: var(--marron-rodape);
-    box-shadow: 1px 0 9px grey;
+    background-color: var(--marron-rodape);
+    color: var(--branco);
+    box-shadow: 1px 0 9px var(--preto);
+    border-radius: 10px;
 }
-.cabecalho-sair{
-    background-image: url(../img/sair.png);
+.cabecalho__botao button:active{
+    color: var(--marron-rodape-sombra-clara);
 }
-.cabecalho-quemsomos{
-    background-image: url(../img/quemsomos.png);
-}
-.cabecalho-configuracao{
 
-    background-image: url(../img/configuracao.png);
-}

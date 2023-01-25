@@ -1,0 +1,37 @@
+.pesquisa label{
+    padding: 1em;
+    width: 48px;
+    height: 48px;
+    display: inline-block;
+}
+.container__imagem{
+    background-size: 100%;
+}
+.pesquisa__checkbox{
+    display: none;
+
+}
+.pesquisa__checkbox:checked~.pesquisa__container{
+    display: none;
+}
+.pesquisa__botao{
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+    background-image: url(../img/lupa.png);
+}
+.pesquisa__container{
+    padding: 1em;
+    justify-content: center;
+}
+.pesquisa__input{
+    width: 80vw;
+    border: 2px solid var(--marron-rodape);
+    border-radius: 10px;
+    background-color: var(--pasta-suspensa);
+    text-align: center;
+}
+.pesquisa__input::placeholder{
+    color: var(--marron-rodape);
+    text-align: center;
+}
