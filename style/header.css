@@ -1,61 +1,46 @@
 .container__cabecalho{
-    height: 50vh;
-    grid-template-areas:    
-    "logo logo botao";
-    text-align: center;
-    background: linear-gradient(130deg, var(--cinza) 15%, var(--marrom-mais-claro) 35.37%);    
+    flex-direction: column;    
+    align-items: center;
+    padding: 1em 0;
+    row-gap: 1em;
+    background: linear-gradient(326deg, rgba(64,36,1,1) 28%, rgba(115,86,52,1) 100%);
+    border: .5em groove #CC7204;
 }
 .cabecalho__logo{
-    grid-area: logo;
-    width: 80%;    
-    text-align: center;    
-    justify-content: center;
+    width: 90%;
 }
 .cabecalho__logo a{
-    display: inline-block;
-    height: 100%;
     width: 100%;
 }
 .cabecalho__logo img{
-    width: 70%;
-    padding: 0 2rem;
-    cursor: pointer;
-}
-.cabecalho__logo img:hover{
-    transform: scale(1.04);
-}
-.cabecalho__menu{
-    grid-area: botao;
-    align-self: center;
+    width: 100%;
 }
 .cabecalho__botoes{
-    flex-direction: column;
-    row-gap: 1rem;
+    column-gap: .2em;
+}
+.cabecalho__botao{        
+    text-align: center; 
 }
 .cabecalho__botao button{
-    background-color: transparent;
-    border: none;
-    width: 200px;
-    height: 40px;
-    cursor: pointer;
-    color: var(--marron-rodape); 
-    font-size: 1rem; 
+    width: 120px;
+    height: 22px;
+    background-color: var(--marron-rodape);
+    border: none;    
+    background-size: 100%;
+    font-size: 10px;
+    text-align: start;
+    text-transform: uppercase;
     font-weight: bold;
-    border-left: 1px dotted var(--marron-rodape);
-    box-shadow: -1px 1px 9px black;
-    background-color: var(--capa-do-livro);
-}
-.cabecalho__botao button:hover{
-    transform: scale(1.05);
-    color: var(--capa-do-livro);
-    text-decoration: underline;
+    color: var(--marron-rodape);
+    box-shadow: 1px 0 9px grey;
 }
 .cabecalho-sair{
     background-image: url(../img/sair.png);
 }
-.cabecalho-configuracao{
-    background-image: url(../img/configuracao.png);
-}
 .cabecalho-quemsomos{
     background-image: url(../img/quemsomos.png);
+}
+.cabecalho-configuracao{
+
+    background-image: url(../img/configuracao.png);
 }
