@@ -1,0 +1,19 @@
+.abas{
+ justify-content: end;
+ font-size: 1.5rem; 
+ padding: 0 .5rem;
+ align-items: flex-end;
+}
+.abas a{
+    text-decoration: none;
+    color: var(--marron-rodape);
+}
+.body__aba {
+    padding: .2rem;    
+    border: 1px solid var(--marron-rodape);
+    border-radius: 0 10px 0 0;
+    background-color: var(--pasta-suspensa);  
+}
+.aba-ativa{
+    font-size: 2rem;
+}

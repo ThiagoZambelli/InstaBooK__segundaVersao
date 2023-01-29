@@ -10,7 +10,7 @@
 </head>
 <body>
     <header>
-        <div class="container__cabecalho container__grid">
+        <div class="container__cabecalho container__flex">
             <h1 class="cabecalho__logo"><a href="../index.html"><img src="../img/logo.png" alt="Logo do InstaBook"></a></h1>            
             <nav class="cabecalho__menu">
                 <ul class="cabecalho__botoes container__flex">
@@ -21,16 +21,15 @@
             </nav>            
         </div>
     </header>
-    <section class="pesquisa">        
-        <input type="checkbox" id="pesquisa" class="container__cheackbox" checked>
+    <section class="pesquisa container__flex">        
+        <input type="checkbox" id="pesquisa" checked>
         <label for="pesquisa">
-            <span class="pesquisa__botao container__imagem"></span>
-        </label>
-        <section class="pesquisa__container container__flex">
-            <div>
-                <input id="pesquisa-body" type="search" class="pesquisa__input" placeholder="Buscar">                
-            </div>            
-        </section>        
+            <span><img src="../img/lupa.png" alt="Imagem de uma lupa"></span>
+        </label> 
+        <div class="pesquisar container__flex">
+            <input type="search" class="pesquisar__input" placeholder="Digite sua busca">
+            <button class="pesquisar__botao">Pesquisar</button>
+        </div>  
     </section>
     <div>
         <section class="body__menu">
